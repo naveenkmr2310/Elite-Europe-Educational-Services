@@ -3,12 +3,10 @@ import Hero from '../Hero/Hero'
 import Programs from '../Programs/Programs'
 import Title from '../Title/Title'
 import About from '../About/About'
-import Campus from '../Campus/Campus'
 import Testimonials from '../Testimonials/Testimonials'
 import Mentors from '../Mentor/Mentor'
 import Contact from '../Contact/Contact'
 import Footer from '../Footer/Footer'
-import VideoPlayer from '../VideoPlayer/VideoPlayer'
 import Navbar from '../Navbar/Navbar'
 import PostGraduation from '../PostGraduation/PostGraduation'
 import OtherServices from '../OtherServices/OtherServices'
@@ -40,7 +38,6 @@ return (
         <Contact/>
         <Footer/>
      </div>
-     <VideoPlayer playState={playState} setPlayState={setPlayState} />
     </div>
 )
 }
