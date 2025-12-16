@@ -52,3 +52,18 @@ a{
     padding: 14px 22px;
   }
 }
+
+.mentor-modal, .modal, .ReactModal__Content {
+  position: fixed;   /* create top-level stacking context */
+  z-index: 10000;    /* high value so it sits above images */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-backdrop, .ReactModal__Overlay {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}

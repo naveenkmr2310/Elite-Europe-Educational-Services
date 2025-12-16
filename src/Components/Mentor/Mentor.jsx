@@ -94,7 +94,7 @@ const slider = useRef();
   useEffect(() => {
     const id = setInterval(() => {
       if (!modal && !isPaused) slideForward();
-    }, 3000);
+    }, 5000);
     return () => clearInterval(id);
   }, [modal, isPaused]);
 
@@ -216,7 +216,7 @@ const slider = useRef();
       {modal && (
         <div className="modal">
           <div onClick={()=>toggleModal('')} className="overlay"></div>
-          <div className="modal-content">
+          <div className="modal-content" style={{maxWidth:'65vw', minWidth:'55vw', position:'relative', overflow:'auto', top:'55%', maxHeight:'80vh', zIndex:'10000'}}>
             <h2>Book Your Slot</h2><br/>
             <div className="contact-col">
                 <form onSubmit={onSubmit}>
