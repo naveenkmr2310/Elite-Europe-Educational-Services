@@ -94,7 +94,7 @@ const slider = useRef();
   useEffect(() => {
     const id = setInterval(() => {
       if (!modal && !isPaused) slideForward();
-    }, 5000);
+    }, 10000);
     return () => clearInterval(id);
   }, [modal, isPaused]);
 

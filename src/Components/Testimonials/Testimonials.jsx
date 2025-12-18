@@ -39,7 +39,7 @@ const Testimonials = () => {
   useEffect(() => {
     const id = setInterval(() => {
       if (!isPaused) slideForward();
-    }, 3000);
+    }, 10000);
     return () => clearInterval(id);
   }, [isPaused]);
 
